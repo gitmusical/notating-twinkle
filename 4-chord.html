@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charSet="utf-8" />
+    <style>
+      body { max-width: 800px; margin: 40px auto; }
+      img { max-width: 100%; }
+    </style>
+  </head>
+  <body>
+    <img src="4-chord.png" />
+    <script type='text/javascript' src='https://www.midijs.net/lib/midi.js'></script>
+    <a href="#" onClick="MIDIjs.play('4-chord.midi')">Play MIDI</a>
+    <span class="status"></span>
+    <script>
+      MIDIjs.message_callback = function (m) {
+        document.querySelector('.status').innerHTML = m
+      }
+    </script>
+  </body>
+</html>
