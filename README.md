@@ -1,2 +1,2 @@
 # notating-twinkle
-GitHub pages site for midi and images
+GitHub pages site for MIDI and images
